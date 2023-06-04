@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+    Megharsh L
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          megharsh2003@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +7892465998
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendation">Recommendation</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Megharsh L! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+            
+        <div class="skill">
+        <img src="html_finalprojimages/java.png"/>
+        <h6>Java</h6>
+        <p>3 years experience</p>
+      </div> 
+
+      <div class="skill">
+        <img src="html_finalprojimages/node.png"/>
+        <h6>Java</h6>
+        <p>3 years experience</p>
+      </div> 
+      <div class="skill">
+        <img src="html_finalprojimages/react.png"/>
+        <h6>Java</h6>
+        <p>3 years experience</p>
+      </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Developed a secure website integrated with a chatbot for an automobile client using HTML, CSS, JavaScript, and IBM Watson Assistant.
+                Implemented conversational AI capabilities to provide automated customer support and enhance user experience.</li>
+                <li>Implemented conversational AI capabilities to provide automated customer support and enhance user experience.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+              <li>Built and deployed a sentiment analyzer for the reviews section of an eCommerce platform. Utilized IBM Natural Language Understanding (NLU) to analyze and classify customer reviews, providing valuable insights into customer sentiments and feedback.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>Designed and developed a visually appealing multi-page website for a fashion industry newcomer. Implemented features such as a shopping cart and integrated Stripe as the payment gateway, enabling customers to browse and purchase fashion products seamlessly.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Social Media Analytics Dashboard</h3>
+            <ul>
+              <li>DDevelop an analytics dashboard that collects and analyzes data from various social media platforms. Use tools such as Python, Django, and data visualization libraries to extract insights, track engagement, and monitor trends for businesses or individuals..</li>
+              
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Megharsh possesses exceptional problem-solving skills, consistently delivering creative solutions. His analytical mindset, attention to detail, and ability to think critically make him an invaluable asset in tackling complex challenges.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Megharsh is an effective communicator who articulates ideas with clarity and precision. His excellent verbal and written communication skills enable him to convey complex concepts in a concise and engaging manner, ensuring effective collaboration."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Megharsh is a reliable professional with a keen eye for detail. His commitment to accuracy and thoroughness in every task ensures high-quality deliverables. Clients and team members can always count on him to exceed expectations."
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg><!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recomendation Here</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
